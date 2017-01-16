@@ -12,55 +12,10 @@
 <FONT FACE = "TH SarabunPSK " SIZE ="5" COLOR= "BLACK">
 
 <marquee ><IMG SRC="w.jpg" WIDTH="300" HEIGHT="200"></marquee><BR><BR>
-<script language="JavaScript">
-var browser     = '';
-var version     = '';
-var entrance    = '';
-var cond        = '';
-// BROWSER
-if (browser == ''){
-if (navigator.appName.indexOf('Microsoft') != -1)
-browser = 'IE'
-else if (navigator.appName.indexOf('Netscape') != -1)
-browser = 'Netscape'
-else browser = 'NN';
-}
-// VERSION?
-if (version == ''){
-version= navigator.appVersion;
-paren = version.indexOf('(');
-whole_version = navigator.appVersion.substring(0,paren-1);
-version         = parseInt(whole_version);
-}
-// BROWSER & VERSION
-if (browser == 'IE' && version >= 4) entrance = 'yes';
-if (browser == 'IE' && version < 4) entrance = 'no';
-if (browser == 'Netscape' && version >= 2.02) entrance = 'yes';
-if (browser == 'Netscape' && version < 2.02) entrance = 'no';
-if (entrance=='yes'){
-name0a=new Image;name0a.src="t.jpg";
-name0b=new Image;name0b.src="tai1.jpg";
-name0c=new Image;name0c.src="t.jpg";
-}
-function lighten(imgName) {
-if (entrance == 'yes'){
-imgOn = eval(imgName + 'b.src');
-document[imgName].src = imgOn;
-}
-}
-function darken(imgName) {
-if (entrance == 'yes'){
-imgOff = eval(imgName + 'a.src');
-document[imgName].src = imgOff;
-}
-}
-function darken2(imgName) {
-if (entrance == 'yes'){
-imgClick = eval(imgName + 'c.src');
-document[imgName].src = imgClick;
-}
-}
-</script><a href="https://www.facebook.com/waraporn.maleebumrung"><IMG SRC="t.jpg" WIDTH="400" HEIGHT="300"></a><BR>
+<a href="https://www.facebook.com/waraporn.maleebumrung">
+<img src="t.jpg" border="0"
+onmouseover="this.src='tai1.jpg';"
+onmouseout="this.src='t.jpg';"/></a><BR>
 <BR>
 <IMG SRC="doreamon.jpg" WIDTH="100" HEIGHT="100">
 <marquee ><FONT FACE="EucrosiaUPC" SIZE="+60" COLOR="#FF0066"><B>- ABOUT ME -</marquee></B></FONT>
