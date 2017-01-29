@@ -6127,6 +6127,7 @@ td {
 .container {
     position: relative;
     width: 50%;
+    height: 100%;
 }
 
 .image {
